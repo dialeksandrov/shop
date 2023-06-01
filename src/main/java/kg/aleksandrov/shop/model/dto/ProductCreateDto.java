@@ -4,12 +4,14 @@ import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Positive;
 import kg.aleksandrov.shop.model.enums.ProductType;
+import lombok.Builder;
 import lombok.Data;
 
 import java.math.BigDecimal;
 import java.util.Set;
 
 @Data
+@Builder
 public class ProductCreateDto {
 
     @Schema(description = "Серия продукта")

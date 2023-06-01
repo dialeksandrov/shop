@@ -1,7 +1,6 @@
 package kg.aleksandrov.shop.dal.entity;
 
 import jakarta.persistence.*;
-import kg.aleksandrov.shop.model.dto.ProductParamDto;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -26,10 +25,5 @@ public class ProductParamEntity {
 
     @Column(name = "product_id")
     private Long productId;
-
-    public ProductParamEntity(ProductParamDto dto) {
-        this.name = dto.getName();
-        this.param = dto.getParam();
-    }
 
 }

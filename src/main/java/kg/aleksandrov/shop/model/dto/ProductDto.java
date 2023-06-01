@@ -2,12 +2,14 @@ package kg.aleksandrov.shop.model.dto;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import kg.aleksandrov.shop.model.enums.ProductType;
+import lombok.Builder;
 import lombok.Data;
 
 import java.math.BigDecimal;
 import java.util.Set;
 
 @Data
+@Builder
 public class ProductDto {
 
     @Schema(description = "Идентификатор продукта")

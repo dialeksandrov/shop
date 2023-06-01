@@ -24,6 +24,7 @@ public class AdminProductServiceImpl implements AdminProductService {
     }
 
     @Override
+    @Transactional
     public void editProduct(ProductDto dto) {
         var product = productRepository.findById(dto.getId())
                 .orElseThrow(() -> ExceptionUtils.productNotFoundException(dto.getId()));
