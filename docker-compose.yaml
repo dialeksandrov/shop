@@ -1,0 +1,13 @@
+version: '3.3'
+
+services:
+  shop:
+    platform: linux/x86_64
+    image: openjdk:17-alpine
+    container_name: shop
+    restart: always
+    ports:
+      - "8080:8080"
+    environment:
+      - TZ=Asia/Bishkek
+    network_mode: host
